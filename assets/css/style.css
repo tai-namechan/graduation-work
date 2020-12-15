@@ -1,0 +1,151 @@
+header{
+    background-color: orange;
+    padding: 14px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.logo{
+    height: 60px;
+}
+
+.nav{
+    display: flex;
+}
+
+/* > = 直下の、という意味 */
+.nav > li > a {
+    color: white;
+    font-size: 20px;
+    /* padding: 10px; */
+    margin-left:20px;
+
+}
+
+.welcome {
+    /* 大事！ファイルの設定、background-image:;の中に　url('')  ''の中に　../ */
+    background-image: url('../img/karaage5.jpg');
+    background-size:cover;
+    background-repeat: no-repeat;
+    /* vh = view height ウィンドウの高さがマックス100*/
+    height:100vh;
+    /* 文字色、両方に効かせたい　ここ、親要素に書く */
+    color:white;
+    /* 文字を太く */
+    font-weight: bold;
+}
+
+
+
+/* ここにしかない */
+.title{
+    text-align: center;
+    font-size: 80px;
+
+    /* アニメーション */
+    animation-name: bigger_font;
+    animation-duration: 3s;
+    animation-delay: 0ms;
+    animation-timing-function: ease;
+
+}
+/* アニメーション */
+@keyframes bigger_font {
+    from{
+        font-size: 0px;
+    }
+    to{
+        font-size: 80px;
+    }
+}
+
+.guideline li {
+    text-align: center;
+    font-size: 60px;
+    /* アニメーション */
+    animation-name: bigger_font2;
+    animation-duration: 3s;
+    animation-delay: 5ms;
+    animation: bigger_font 3s 2s ease;
+}
+.guideline2 {
+    text-align: center;
+    font-size: 80px;
+    color: rgb(143, 78, 35);
+    animation: bigger_font 3s 3s ease;
+}
+.guideline3 {
+    text-align: center;
+    font-size: 50px;
+    animation: bigger_font 3s 4s ease;
+}
+
+.contents>img{
+    height: 150px;
+    margin-top: 10px;
+}   
+.contents{
+    /* margin-top: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center; */
+
+    border: 1px solid black;
+    margin: 0px 15px;
+    padding: 20px 30px;
+    display: flex;
+    align-items: center;
+    
+}
+#menu>h2{
+    font-size: 50px;
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+}
+#takeout>h2{
+    font-size: 50px;
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+}
+
+.guideline4{
+    text-align: center;
+}
+footer{
+    background-color: rgb(61, 2, 2);
+    padding:30px 40px;
+}
+
+/* .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+} */
+.flex{
+    width: 200px;
+    height: 200px;
+    /* border: 1px solid pink; */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
