@@ -42,8 +42,8 @@ header{
 /* ここにしかない */
 .title{
     text-align: center;
-    font-size: 80px;
-
+    font-size:80px;
+    color: brown;
     /* アニメーション */
     animation-name: bigger_font;
     animation-duration: 3s;
@@ -51,34 +51,48 @@ header{
     animation-timing-function: ease;
 
 }
+/* メディアスクリーン */
+@media screen and (max-width:780px){
+    .title{
+        color:orange;
+        font-size: 60px;}
+}
+@media screen and (max-width:500px){
+    .title{
+        color:brown;
+        font-size: 60px;
+    }
+}
 /* アニメーション */
 @keyframes bigger_font {
     from{
         font-size: 0px;
     }
     to{
-        font-size: 80px;
+        font-size: 60px;
     }
 }
 
 .guideline li {
     text-align: center;
     font-size: 60px;
+    color: brown;
     /* アニメーション */
     animation-name: bigger_font2;
     animation-duration: 3s;
     animation-delay: 5ms;
     animation: bigger_font 3s 2s ease;
 }
-.guideline2 {
+.guideline2 li {
     text-align: center;
     font-size: 80px;
-    color: rgb(143, 78, 35);
+    color:brown;
     animation: bigger_font 3s 3s ease;
 }
-.guideline3 {
+.guideline3 li {
     text-align: center;
     font-size: 50px;
+    color: brown;
     animation: bigger_font 3s 4s ease;
 }
 
@@ -90,14 +104,19 @@ header{
     /* margin-top: 50px;
     display: flex;
     align-items: center;
-    justify-content: center; */
+    justify-conten/t: center; */ 
 
     border: 1px solid black;
-    margin: 0px 15px;
+    margin: 20px 15px;
     padding: 20px 30px;
     display: flex;
     align-items: center;
     
+}
+.contents > ul > li {
+    font-size: 20px;
+    text-align: center;
+    padding: 15px;
 }
 #menu>h2{
     font-size: 50px;
@@ -105,6 +124,13 @@ header{
     display: flex;
     justify-content: center;
 }
+@media screen and (max-width:500px){
+    h2{
+        background-color:orange;
+        color:white;
+    }
+}
+
 #takeout>h2{
     font-size: 50px;
     margin-top: 40px;
@@ -115,8 +141,107 @@ header{
 .guideline4{
     text-align: center;
 }
+
+.container{
+    /* 画像を三つ横並び親要素に書く */
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+}
+
+.flex{
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin:0 15px;
+}
+
+.flex>img{
+    /* スマホで見れるように */
+    /* height150px →　auto */
+    height:auto;
+    margin-top: 10px;
+    /* なし　→　max-width:100%; */
+    max-width: 100%;
+}
+
+.container2{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+/* デスクトップファースト */
+
+
+.flex2{
+    margin-top: 30px;
+    color: rgb(255, 153, 0); 
+    
+    /* margin:; */
+
+}
+/* アクセス */
+#accese>h2{
+    font-size: 50px;
+    text-align: center;
+    
+}
+.accese{
+    display: flex;
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+.accese > ul >li {
+    font-size: 20px;
+    text-align: center;
+    padding: 15px;
+    margin-top: 30px;
+}
+@media screen and (max-width:500px){
+    .accese>ul>li{
+        font-size: 20px;
+        color: black;
+    }
+}
+/* プロフィール */
+#profile>h2{
+    font-size: 50px;
+    text-align: center;
+    /* display: flex; */
+    /* justify-content: center; */
+    background-color: rgb(202, 74, 74);
+}
+#profile>p{
+    font-size: 35px;
+    text-align: center;
+    background-color: rgb(202, 74, 74);
+}
+.profile{
+    font-size: 35px;
+    font-weight: bold;
+    color: orange;
+    display: flex;
+    /* justify-content: center; */
+    text-align: center;
+    align-items: center;
+}
+
+@media screen and (max-width:500px) {
+    #profile>h2{
+        color: black;
+    }
+    #profile>p{
+        font-size: 30px;
+    }
+}
+
+
+
 footer{
     background-color: rgb(61, 2, 2);
+    color: white;
+    text-align: center;
     padding:30px 40px;
 }
 
@@ -130,6 +255,7 @@ footer{
     height: 200px;
     /* border: 1px solid pink; */
 }
+
 
 
 
