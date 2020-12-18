@@ -76,7 +76,7 @@ header{
 .guideline li {
     text-align: center;
     font-size: 60px;
-    color: brown;
+    color:orange;
     /* アニメーション */
     animation-name: bigger_font2;
     animation-duration: 3s;
@@ -86,13 +86,13 @@ header{
 .guideline2 li {
     text-align: center;
     font-size: 80px;
-    color:brown;
+    color:orange;
     animation: bigger_font 3s 3s ease;
 }
 .guideline3 li {
     text-align: center;
     font-size: 50px;
-    color: brown;
+    color:orange;
     animation: bigger_font 3s 4s ease;
 }
 
@@ -118,6 +118,8 @@ header{
     text-align: center;
     padding: 15px;
 }
+
+
 #menu>h2{
     font-size: 50px;
     margin-top: 40px;
@@ -233,6 +235,12 @@ header{
     }
     #profile>p{
         font-size: 30px;
+    }
+    .profile{
+        display: inline;
+    }
+    .profile > img {
+        padding-left: 100px;
     }
 }
 
